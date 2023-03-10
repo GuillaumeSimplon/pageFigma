@@ -3,7 +3,7 @@
 
 ## Convertir la maquette validée en page web
 
-« *** »
+***
 ### Critères de performance
 - Le site est responsive est s’adapte à un maximum d’écran
 - L'interface est conforme à la demande de l'expression de besoin
