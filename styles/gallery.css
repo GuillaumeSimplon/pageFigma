@@ -1,0 +1,152 @@
+/*CONTENANT avec BACKGROUND*/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DIV BLEUE */
+.blueGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3dc1cd;
+    padding: 20px 0;
+}
+
+/* DIV BLEUE TITRE H2 */
+.blueGallery>h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+/* LIGNE */
+.ligneGallery {
+    border-bottom: solid 1px white;
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+/* DIV BLEUE P */
+.blueGallery>p {
+    color: white;
+    text-align: center;
+    margin: 0 5% 5% 5%;
+}
+
+/* LISTE */
+.blueGallery>ul>li {
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    line-height: 10px;
+    margin-bottom: 40%;
+    font-size: 14px;
+}
+
+.blueGallery>ul>li:hover {
+    color: #F6C45C;
+}
+
+
+
+/* DIV GALLERY */
+.imgGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+/* VERSION ORDI */
+@media screen and (min-width: 780px) {
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        height: 800px;
+        width: 100%;
+        /* max-width: 1000px; */
+        /* margin: 0 auto; */
+    }
+
+    /* DIV BLEUE */
+    .blueGallery {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: #3dc1cd;
+        padding: 0 0 0 50px;
+    }
+
+    /* DIV BLEUE TITRE H2 */
+    .blueGallery>h2 {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    /* DIV BLEUE P */
+    .blueGallery>p {
+        text-align: left;
+        margin: 0 5% 20% 0;
+        max-width: 300px;
+    }
+
+    /* LISTE */
+    .blueGallery>ul>li {
+        text-align: left;
+    }
+
+
+
+
+    /* DIV GALLERY */
+
+    .imgGalleryBig {
+        width: 70%;
+        display: flex;
+        margin: 0 15px;
+    }
+
+    .imgGallery {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 5%;
+        align-items: start;
+        justify-content: start;
+        gap: 0;
+    }
+
+    .imgGallery>img {
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+/* POUR QUE LES IMAGES NE DÉPASSENT PAS LE CONTAINER */
+@media screen and (min-width: 1280px) {
+
+    .imgGallery>img {
+        width: 40%;
+    }
+
+}

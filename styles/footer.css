@@ -1,0 +1,292 @@
+/* @fa-font-path: "../font"; */
+
+/* CONTAINER FOOTER */
+.footerContainer {
+    background-color: #373a3c;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CONTAINER LOGO */
+/* CONTAINER LOGO */
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGO */
+.footerLogo>a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.footerLogo>a::first-letter {
+    color: #F6C45C;
+    font-size: 28px;
+}
+
+/* CONTAINER INTERIEUR LOGO */
+.footerParagrapheLight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LISTE LOGO */
+.footerParagrapheLight>ul>li {
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+
+/* LIGNE */
+.footerSeparateurHorizontal {
+    border-bottom: solid white 0.1px;
+    width: 90%;
+    margin: 3%;
+}
+
+/* CONTAINER LOCATION */
+/* CONTAINER LOCATION */
+.footerLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITRE H4 LOCATION */
+.footerLocation>h4 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 25px;
+
+}
+
+
+/* CONTAINER INTERIEUR LOCATION */
+.footerLocationAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LISTE LOCATION */
+.footerLocationAlign>ul>li {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    list-style-type: none;
+    margin: 10px;
+}
+
+/* LIGNE LOCATION */
+.footerLocationSeparateurVertical {
+    border-left: solid white 0.1px;
+    height: 50px;
+    margin: 20px;
+}
+
+
+
+/* CONTAINER INFO */
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITRE H4 INFO */
+.footerInfo>h4 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+/* CONTAINER INTERIEUR INFO */
+.footerInfoAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerInfoAlign>p>span {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.footerInfoAlign>p {
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    margin-right: 20px;
+}
+
+
+
+/* CONTAINER SOCIAL */
+.footerSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITRE H4 INFO */
+.footerSocial>h4 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* CONTAINER DES ICONES SOCIALES */
+.footerSocialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialIcons>ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BACKGROUND DES ICONES SOCIALES */
+.footerSocialIcons>ul>li {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    list-style-type: none;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialIcons>ul>li:hover {
+    background-color: #F6C45C;
+
+}
+
+.footerSocialIcons>ul>li>a {
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+/* VERSION ORDI */
+@media screen and (min-width: 780px) {
+
+    .footerContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        margin: 0 auto;
+    }
+
+    /* LIGNE */
+    .footerSeparateurHorizontal {
+        display: none;
+    }
+
+
+    /* LES 4 CONTAINERS ENFANTS */
+    .footerLogo,
+    .footerLocation,
+    .footerInfo,
+    .footerSocial {
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .footerLogo {
+        margin-left: 20px;
+    }
+
+    .footerLogo,
+    .footerLocation {
+        width: 33%;
+    }
+
+    .footerInfo,
+    .footerSocial {
+        width: 17%;
+    }
+
+    .footerSocial {
+        margin-right: 20px;
+    }
+
+    /* LOGO */
+    .footerParagrapheLight>ul>li {
+        text-align: left;
+    }
+
+
+    /* LOCATION */
+    .footerLocationAlign>ul {
+        justify-content: start;
+        align-items: start;
+    }
+
+    .footerLocationAlign>ul>li {
+        text-align: left;
+    }
+
+
+    /* INFO */
+    .footerInfoAlign {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+
+
+    /* CONTAINER DES ICONES SOCIALES */
+    .footerSocialIcons>ul {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+
+    }
+
+
+}

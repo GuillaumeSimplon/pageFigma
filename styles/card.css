@@ -1,0 +1,99 @@
+/*CONTENANT avec BACKGROUND*/
+.cardContainer {
+    height: 100%;
+    padding: 30px 0;
+    background-image: url("../img/about-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5%;
+}
+
+/* LISTES des CARTES */
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* PICTO */
+.pictoCard {
+    display: flex;
+    border: solid 3px white;
+    border-radius: 50%;
+    background-color: #F6C45C;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 5%;
+    transition: 0.3s;
+}
+
+.pictoCard:hover {
+    background-color: #3dc1cd;
+}
+
+/* TITRE H2 */
+.cards>h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+/* LIGNE */
+.ligneCard {
+    border-bottom: solid 1px white;
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+/* P */
+.cards>p {
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.buttonBlue {
+    background-color: #3dc1cd;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px white;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    white-space: nowrap;
+    /*Ne revient pas à la ligne*/
+}
+
+.buttonBlue:hover {
+    background-color: white;
+    color: #3dc1cd;
+    box-shadow: #3dc1cd 0px 0px 10px;
+}
+
+@media screen and (min-width: 780px) {
+
+    /*CONTENANT avec BACKGROUND*/
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+
+    /* LISTES des CARTES */
+    .cards {
+        justify-content: space-between;
+        max-width: 250px;
+    }
+}

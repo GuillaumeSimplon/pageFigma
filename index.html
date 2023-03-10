@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <FONTS> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <!-- </FONTS> -->
+
+
+
+    <!-- FONT AWESOME vers url-->
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-qhM2YmUkuOrCdL+6zvZvLXR5iKo5aNSfA+Yf/QvYKS5w5dL6aGKfUPXtbgODmj42" crossorigin="anonymous"> -->
+
+
+
+    <!-- FONT AWESOME avec stylesheet.css -->
+
+    <!-- <link rel="stylesheet" href="styles/fontawesome.css">
+    <link rel="stylesheet" href="styles/all.css"> -->
+
+</head>
+
+<!-- BIBLIOTHEQUE JS ET TS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typescript/lib/typescript.js"></script>
+
+
+<body>
+    <header>
+        <!-- HEADER -->
+
+        
+        <nav class="navbarScrolled">
+
+            <a class="navLogo" href="#">TINKER</a>
+
+            <input type="checkbox" id="burger">
+            <label for="burger">☰</label>
+
+            <ul>
+                <li><a href="#ancreHero">HOME</a></li>
+                <li><a href="#ancreCard">ABOUT US</a></li>
+                <li><a href="#ancreGallery">PORTFOLIO</a></li>
+                <li><a href="#ancreBlog">BLOG</a></li>
+                <li><a href="#ancreContact">CONTACT US</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- LA NAVBAR sE MODIFIE DYNAMIQUEMENT (Après son chargement) -->
+    <script src="./styles/navbar.ts"></script>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section>
+            <div class="heroBanner" id="ancreHero">
+
+                <div class="hero">
+                    <h1>Awesome <span id="html5">HTML5</span> Template <span id="tinker">TINKER</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, cupiditate harum accusamus autem
+                        animi, sint iste dignissimos quas laboriosam praesentium similique dicta rem veritatis veniam
+                        voluptatibus impedit, sed in voluptate.</p>
+                    <button class="buttonHero">LET'S START</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- CARD -->
+        <section>
+            <div class="cardContainer" id="ancreCard">
+
+                <div class="cards">
+                    <div class="pictoCard"><img src="./img/service_icon_01.png" alt="Picto cloche"></div>
+                    <h2>Smart Notifications</h2>
+                    <div class="ligneCard"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, praesentium?</p>
+                    <button class="buttonBlue">CONTINUE READING</button>
+                </div>
+
+                <div class="cards">
+                    <div class="pictoCard"><img src="./img/service_icon_02.png" alt="Picto coeur"></div>
+                    <h2>Lovely Web Design</h2>
+                    <div class="ligneCard"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nisi repudiandae eveniet, quidem
+                        nostrum ut.</p>
+                    <button class="buttonBlue">CONTINUE READING</button>
+                </div>
+
+                <div class="cards">
+                    <div class="pictoCard"><img src="./img/service_icon_03.png" alt="Picto heure"></div>
+                    <h2>24/7 Quick Support</h2>
+                    <div class="ligneCard"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro asperiores a ad sapiente saepe
+                        molestias tempore assumenda. Ea, at voluptas.</p>
+                    <button class="buttonBlue">CONTINUE READING</button>
+                </div>
+
+                <div class="cards">
+                    <div class="pictoCard"><img src="./img/service_icon_04.png" alt="Picto cloche"></div>
+                    <h2>One-Click Setup</h2>
+                    <div class="ligneCard"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, praesentium?</p>
+                    <button class="buttonBlue">CONTINUE READING</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- GALLERY -->
+        <section>
+            <div class="gallery" id="ancreGallery">
+
+                <div class="blueGallery">
+                    <h2>OUR GALLERY</h2>
+                    <div class="ligneGallery"></div>
+                    <p>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec
+                        dictum ac, gravida ac lectus.</p>
+                    <ul>
+                        <li>Show All</li>
+                        <li>Branding</li>
+                        <li>Graphic</li>
+                        <li>Nature</li>
+                        <li>Animation</li>
+                    </ul>
+                </div>
+
+                <div class="imgGalleryBig">
+                    <div class="imgGallery">
+                        <img src="./img/portfolio_item_01.jpg" alt="Double café et tartines de fraises">
+                        <img src="./img/portfolio_item_02.jpg" alt="Escalier blanc rampe en fer forgé">
+                        <img src="./img/portfolio_item_03.jpg" alt="lunette monture noire sur macbook">
+                        <img src="./img/portfolio_item_04.jpg" alt="Bols de yaourt et salade de fruits">
+                        <img src="./img/portfolio_item_05.jpg" alt="Salade de fruits et tablette choco">
+                        <img src="./img/portfolio_item_06.jpg" alt="Chaise plastique creme vue de dos">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- ART-DIRECTOR -->
+        <section class="artDirector">
+            <p class="textDirector">“ Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam
+                tincidunt metus nec eros dignissim consectetur. ”</p>
+            <h3>John Henry</h3>
+            <p class="director">Art Director</p>
+            <div class="points">
+                <div class="listePoint"></div>
+                <div class="listePoint"></div>
+                <div class="listePoint"></div>
+                <div class="listePoint"></div>
+            </div>
+        </section>
+
+
+
+
+        <!-- BLOG -->
+        <section>
+            <div class="blog" id="ancreBlog">
+
+                <div class="listePost">
+                    <h2>OUR BLOG POSTS</h2>
+                    <div class="lignePost"></div>
+                    <p>Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida quam.
+                    </p>
+                    <a href="#">Nulla Eget Convallis Augue</a>
+                    <a href="#">Quisque Ultricies Maximus</a>
+                    <a href="#">Sed Vel Elit Et Lorem</a>
+                    <a href="#">Vivamus Purus Neque</a>
+                </div>
+
+                <div class="post">
+                    <div class="postImg">
+                        <img src="img/blog_item_01.jpg" alt="Couple de dos avec camionette ice cream en arrière plan">
+                        <h3>Nulla eget convallis augue</h3>
+                        <p id="titreWidget">Digital Marketing / Honey / 21 September 2020</p>
+                        <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta
+                            felis.
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- CONTACT -->
+        <section>
+
+            <div class="contact" id="ancreContact">
+
+                <div class="contactInfo">
+                    <h2>CONTACT US</h2>
+                    <div class="ligneContact"></div>
+                    <p>Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices malesuada. Integer euismod
+                        erat ut nulla ultrices, ut auctor eros feugiat.</p>
+                    <a href="mailto:tk@company.co">SEND US A MESSAGE</a>
+                </div>
+
+                <div class="contactMap"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8082149497623!2d103.86094274964805!3d1.2892987990550084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a936c551cd%3A0x7fb4e58ad9cd826e!2sSingapore%20Flyer!5e0!3m2!1sfr!2sfr!4v1677940602819!5m2!1sfr!2sfr"
+                        width="1440" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footerContainer">
+
+
+            <div class="footerLogo">
+                <a href="#">Tinker</a>
+                <div class="footerParagrapheLight">
+                    <ul>
+                        <li>Copyright © 2020 Your Company</li>
+                        <li>Design: TemplateMo</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- LIGNE -->
+            <div class="footerSeparateurHorizontal"></div>
+            <!-- LIGNE -->
+
+
+            <div class="footerLocation">
+                <h4>LOCATION</h4>
+                <div class="footerLocationAlign">
+                    <ul>
+                        <li>46 Raffles Ave,</li>
+                        <li>Singapore 039803</li>
+                    </ul>
+                    <div class="footerLocationSeparateurVertical"></div>
+                    <ul>
+                        <li>12 Republic Blvd,</li>
+                        <li>Singapore 038975</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- LIGNE -->
+            <div class="footerSeparateurHorizontal"></div>
+            <!-- LIGNE -->
+
+
+            <!-- MODIFIER LES CLASS P ET DIV avec un span -->
+            <div class="footerInfo">
+                <h4>MORE INFO</h4>
+                <div class="footerInfoAlign">
+                    <p><span>Phone:</span> 040-040-0440</p>
+                    <p><span>Email:</span> tk@company.co</p>
+                </div>
+            </div>
+
+            <!-- LIGNE -->
+            <div class="footerSeparateurHorizontal"></div>
+            <!-- LIGNE -->
+
+
+            <div class="footerSocial">
+                <h4>GET SOCIAL WITH US</h4>
+                <div class="footerSocialIcons">
+                    <ul>
+                        <li><a href="#"><img src="./img/social_twitter_15px.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="./img/social_facebook_15px.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="./img/social_google_15px.png" alt="google"></a></li>
+                        <li><a href="#"><img src="./img/social_rss_15px.png" alt="rss"></a></li>
+                        <li><a href="#"><img src="./img/social_dribbble_15px.png" alt="dribbble"></a></li>
+
+
+                        <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <i class="fa-brands fa-twitter"></i>
+
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
