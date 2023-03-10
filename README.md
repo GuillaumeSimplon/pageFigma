@@ -1,8 +1,6 @@
 # pageFigma
 ***
-
 ## Convertir la maquette validée en page web
-
 ***
 ### Critères de performance
 - Le site est responsive est s’adapte à un maximum d’écran
