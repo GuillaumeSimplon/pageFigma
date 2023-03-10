@@ -1,5 +1,4 @@
 # pageFigma
-***
 ## Convertir la maquette validée en page web
 ***
 ### Critères de performance
@@ -14,3 +13,6 @@
 - Respect des bonnes pratiques de nommages (PascalCase, CamelCase, etc)
 - Respect des bonnes pratiques d’indentation
 - Respect des bonnes pratiques de sémantique (header, main, etc)
+***
+#### Lien de mon repositorie
+Lien : `*git@github.com:GuillaumeSimplon/pageFigma.git*`
