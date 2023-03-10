@@ -1,6 +1,6 @@
 # pageFigma
 ## Convertir la maquette validée en page web
-Lien de la maquette à reproduire en html et css : `*https://templatemo.com/live/templatemo_506_tinker*`
+Lien de la maquette à reproduire :  [L'instance staging du site](https://templatemo.com/live/templatemo_506_tinker)
 ***
 ### Critères de performance
 - Le site est responsive est s’adapte à un maximum d’écran
