@@ -1,5 +1,5 @@
 # pageFigma
-« *** »
+***
 
 ## Convertir la maquette validée en page web
 
